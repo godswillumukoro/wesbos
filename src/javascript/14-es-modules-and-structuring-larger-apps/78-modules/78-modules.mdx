@@ -134,7 +134,7 @@ This first one is the CORS issue again. It is giving us trouble because you cann
 
 We cannot use a Parcel server because Parcel also handles modules for us and Wes is trying to show us how they work without using a bundler. We just need a very simple server up and running.
 
-If you know how to run a server to serve us these files, feel free to skip ahead.=
+If you know how to run a server to serve us these files, feel free to skip ahead.
 
 There are a couple of different ways to do this.
 
@@ -294,7 +294,7 @@ That means that you can use variables that are defined inside of a module, and t
 
 That is what is referred to as _scoped to the module_.
 
-The variable `last` would not available in the console if you were to try, because it is not globally scoped, and it is not available in the `scripts` module. The `last` variable is simply scoped to the `utils` file and can only be used within that file.
+The variable `last` would not be available in the console if you were to try, because it is not globally scoped, and it is not available in the `scripts` module. The `last` variable is simply scoped to the `utils` file and can only be used within that file.
 
 Is that good practice? Yes!
 
@@ -388,7 +388,7 @@ The other way to do that is a called a **default export**.
 
 Every module can have as many **named exports** as they want, however it can only have one **default export**, which specifies what is exported from the file by default.
 
-For example, let's make another module `wes.json` and in it assign a variable `person` to an object, and then export that variable like so 👇
+For example, let's make another module `wes.js` and in it assign a variable `person` to an object, and then export that variable like so 👇
 
 ```js
 const person = {
